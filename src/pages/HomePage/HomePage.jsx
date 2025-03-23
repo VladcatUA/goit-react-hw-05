@@ -1,6 +1,7 @@
 import { useEffect, useState} from "react";
-//import MovieList from "../../components/MovieList/MovieList";
+import MovieList from "../../components/MovieList/MovieList";
 import fetchDataTrending from "../../tmdbApi";
+import css from "./HomePage.module.css";
 
 export default function HomePage() {
     const [listMovies, setListMovies] = useState([]);
@@ -30,7 +31,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div /*className={css.section}*/>
+        <div className={css.section}>
           {loader && <p>loader......</p>}
           {error && <p>error with connection..</p>}
     

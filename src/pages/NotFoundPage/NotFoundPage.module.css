@@ -1,0 +1,25 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .link {
+    color: #8b8b89;
+    border: 1px solid #8b8b89;
+    box-shadow: 0px 2px 0px #003248;
+    line-height: 1.5;
+    padding: 5px 20px;
+    border-radius: 7px;
+    transition: all 0.2s;
+  }
+  
+  .link:focus,
+  .link:hover {
+    border: 1px solid #fff;
+    color: #a7def6;
+  }
+  .active {
+    color: #545449;
+  }
